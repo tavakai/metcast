@@ -1,0 +1,18 @@
+.tableInfo_wrapper {
+  max-width: 750px;
+  width: 100%;
+  height: 300px;
+  background: url('../../assets/icons/cloud.svg');
+  background-repeat: no-repeat;
+  background-position-x: right;
+
+  box-shadow: 2px 5px 25px -3px rgb(180 180 180 / 25%);
+  border-radius: 20px;
+}
+.tableInfo_content {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  margin: 42px 30px 31px 31px;
+}

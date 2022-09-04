@@ -1,0 +1,88 @@
+@import '../../styles/variable.scss';
+
+.overlay_show {
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0,0,0,.1);
+}
+.overlay {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.popup {
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  max-width: 750px;
+  width: 100%;
+  background: $light-background;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  background: $light-background;
+
+  position: relative;
+}
+
+.blur {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  svg {
+    transition: 0.3s;
+  }
+  &:hover {
+    svg {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.day {
+  .day__temp {
+    font-weight: 500;
+    font-size: 60px;
+    color: $primary-color;
+    margin-bottom: 12px;
+  }
+  .day__name {
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 12px;
+  }
+  .img {
+    svg {
+      width: 53px;
+      height: 53px;
+    }
+    margin-bottom: 12px;
+  }
+
+  .day__time,
+  .day__city {
+    font-size: 15px;
+    color: $base-color;
+  }
+}
+.this__day_info_items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
