@@ -49,6 +49,11 @@ export const Modal: React.FC<IModal> = ({ hideModal }) => {
       name: 'Еще одно',
       value: 'блаблаблао',
     },
+    {
+      id: 'precipitation',
+      name: 'Влажность',
+      value: 'Кожа трескается',
+    },
   ];
   const handleEsc = (e: KeyboardEvent) => {
     e.code === 'Escape' && hideModal();
@@ -63,7 +68,7 @@ export const Modal: React.FC<IModal> = ({ hideModal }) => {
   }, [modal]);
 
   return ReactDOM.createPortal(
-    <>
+    <React.Fragment>
       <section className={s.overlay + ' ' + s.overlay_show}>
       <div className={s.popup}>
         <div className={s.day}>
@@ -89,7 +94,7 @@ export const Modal: React.FC<IModal> = ({ hideModal }) => {
         </div>
         </div>
       </section>
-    </>,
+    </React.Fragment>,
     modalRoot
   )
 }
