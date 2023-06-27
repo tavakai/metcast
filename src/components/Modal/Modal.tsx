@@ -34,6 +34,11 @@ export const Modal: React.FC<IModal> = ({ hideModal }) => {
       name: 'Ветер',
       value: '3 м/с юго-запад - легкий ветер',
     },
+    {
+      id: 'wind',
+      name: 'Ребейз',
+      value: 'Научиться делать',
+    },
   ];
   const handleEsc = (e: KeyboardEvent) => {
     e.code === 'Escape' && hideModal();
