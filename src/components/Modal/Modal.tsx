@@ -50,6 +50,11 @@ export const Modal: React.FC<IModal> = ({ hideModal }) => {
       value: 'блаблаблао',
     },
     {
+      id: 'snow',
+      name: 'Снег',
+      value: 'Снегопад',
+    },
+    {
       id: 'precipitation',
       name: 'Влажность',
       value: 'Кожа трескается',
